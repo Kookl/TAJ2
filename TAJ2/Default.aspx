@@ -14,9 +14,11 @@
 
              <br />
              &nbsp;&nbsp;&nbsp;
-            <asp:Button ID="Button1" runat="server" Text="Learn More" CssClass="btn1" />
+             &nbsp;&nbsp;&nbsp;
+            <asp:Button ID="Button1" runat="server" Text="Learn More" CssClass="btn1" OnClick="Button1_Click" />
                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
-             <asp:Button ID="Button2" runat="server" Text="Get Started" CssClass="btn2" />
+             <asp:Button ID="Button2" runat="server" Text="Get Started" CssClass="btn2" OnClick="Button2_Click" />
+
 
          </div>
     </div>
