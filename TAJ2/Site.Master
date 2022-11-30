@@ -71,13 +71,72 @@
             </div>
         </div>
         
-        <div class="container body-content">
+         <div class="container body-content">
             <asp:ContentPlaceHolder ID="MainContent" runat="server">
             </asp:ContentPlaceHolder>
+            <br />
+            <br />
             <hr />
-            <footer>
-   
-            </footer>
+          <!-- Remove the container if you want to extend the Footer to full width. -->
+<div class="container my-5">
+
+    <footer style="background-color: aliceblue">
+    <div class="container p-4">
+      <div class="row">
+        <div class="col-lg-6 col-md-12 mb-4"  style="background-color:lightblue;" >
+          <h5 class="mb-3" style="letter-spacing: 2px; color: #818963;">Tax Administration of Jamaica (TAJ)- Fitness and Insurance</h5>
+          <p>
+           "Working Together to Server you better!"
+          </p>
+        </div>
+        <div class="col-lg-3 col-md-6 mb-4" style="background-color:lightcyan;">
+          <h5 class="mb-3" style="letter-spacing: 2px; color: #818963;">Useful Links</h5>
+          <ul class="list-unstyled mb-0">
+            <li class="mb-1">
+              <a href="https://www.jamaicatax.gov.jm/documents/10181/106857/motor_vehicle_transaction_q_a.pdf/449749b4-5416-225a-71ec-7b3fe3ece9b8" style="color: #4f4f4f;">Frequently Asked Questions</a>
+            </li>
+            <li class="mb-1">
+              <a href="Login.aspx" style="color: #4f4f4f;">Register a New Vechile</a>
+            </li>
+            <li class="mb-1">
+              <a href="Login.aspx" style="color: #4f4f4f;">Update Fitness and Insurance</a>
+            </li>
+            <li>
+              <a href="Contact.aspx" style="color: #4f4f4f;">Contact Us</a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-lg-3 col-md-6 mb-4" style="background-color:lightgrey"; >
+          <h5 class="mb-1" style="letter-spacing: 2px; color: #818963;">Opening Hours</h5>
+          <table class="table" style="color: #4f4f4f; border-color: #666;">
+            <tbody>
+              <tr>
+                <td>Mon - Thurs:</td>
+                <td>9am - 4:30pm</td>
+              </tr>
+              <tr>
+                <td>Fridays:</td>
+                <td>8am - 3pm</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+        <br />
+        <br />
+    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+      © 2020 Copyright:
+      <a class="text-dark" href="Default.aspx">Tax Administration of Jamaica (TAJ) - Fitness and Insurance</a>
+    </div>
+    <!-- Copyright -->
+
+        <br />
+        <br/>
+  </footer>
+  
+</div>
+<!-- End of .container -->
         </div>
 
     </form>
