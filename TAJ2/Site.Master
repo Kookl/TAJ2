@@ -52,28 +52,21 @@
                         <span class="icon-bar"></span>
                     </button>
                     <a class="navbar-brand" runat="server" href="~/">TAJ Fitness and Insurance</a>
+                    <asp:Label ID="Name" runat="server" Text="" CssClass="navbar-brand"></asp:Label>
                 </div>
                 <div class="navbar-collapse collapse">
-                    <ul class="nav navbar-nav">
-                        <li></li>
-                        <li></li>
-                        
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a runat="server" href="~/Default">Home</a></li>
+                        <li><a runat="server" href="~/About">About</a></li>
+                        <li><a runat="server" href="~/Contact">Contact</a></li>
+                        <li id="vehicleReg" runat="server"><a runat="server" href="~/Account/VehicleRegistration">Register Vehicle</a></li>
+                        <li id="vehicleStatus" runat="server"><a runat="server" href="~/Account/VehicleStatus">Vehicle Status</a></li>
+                        <li id="unclaimed" runat="server"><a runat="server" href="~/UnClaimed">Unclaimed Registrations</a></li>
+                        <li id="yourVehicles" runat="server"><a runat="server" href="~/YourVehicles">Your Vehicles</a></li>
+                        <li id="signup" runat="server"><a runat="server" href="~/Account/SignUp">Sign Up</a></li>
+                        <li id="login" runat="server"><a runat="server" href="~/Account/Login">Log in</a></li>
+                        <li id="logout" runat="server"><a runat="server" href="~/Account/Login">Logout</a></li>
                     </ul>
-                    
-                     <ul class="nav navbar-nav navbar-right">
-                                <li><a runat="server" href="~/Default">Home</a></li>
-                                <li><a runat="server" href="~/About">About</a></li>
-                                <li><a runat="server" href="~/Contact">Contact</a></li>
-                                <li id="signup" runat="server"><a runat="server" href="~/Account/SignUp">Sign Up</a></li>
-                                <li id="login" runat="server"><a runat="server" href="~/Account/Login">Log in</a></li>
-                                <li id="vehicleReg" runat="server"><a runat="server" href="~/Account/VehicleRegistration">Register Vehicle</a></li>
-                                <li id="vehicleStatus" runat="server"><a runat="server" href="~/Account/VehicleStatus">Vehicle Status</a></li>
-                                <li id="unclaimed" runat="server"><a runat="server" href="~/UnClaimed">Unclaimed Registrations</a></li>
-                                <li id="yourVehicles" runat="server"><a runat="server" href="~/YourVehicles">Your Vehicles</a></li>
-                                
-                         
-                            </ul>
-   
                 </div>
             </div>
         </div>

@@ -14,8 +14,9 @@ namespace TAJ2
 
         }
 
-        protected void Button1_Click(object sender, EventArgs e)
+        protected void UpdateRegistration_Click(object sender, EventArgs e)
         {
+            //Pressing the Button selects a vehicle that the user wants to update the registration for and then redirects to the update registration page
             Button Button1 = (Button)sender;
             GridViewRow selectedRow = (GridViewRow)Button1.NamingContainer;
             Session["Chassi"] = selectedRow.Cells[0].Text;

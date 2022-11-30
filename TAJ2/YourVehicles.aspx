@@ -1,6 +1,6 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="YourVehicles.aspx.cs" Inherits="TAJ2.YourVehicles" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
-    <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" DataKeyNames="ChassiNumber" DataSourceID="SqlDataSource1">
+    <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" BorderColor="#000000" BorderStyle="Solid" BorderWidth="1px" class="table table-condensed table-hover" BackColor="#999999" CellPadding="3" DataKeyNames="ChassiNumber" DataSourceID="SqlDataSource1">
         <Columns>
             <asp:BoundField DataField="ChassiNumber" HeaderText="ChassiNumber" ReadOnly="True" SortExpression="ChassiNumber" />
             <asp:BoundField DataField="LicensePlate" HeaderText="LicensePlate" SortExpression="LicensePlate" />
@@ -12,7 +12,7 @@
             <asp:BoundField DataField="RegistrationExpiry" HeaderText="RegistrationExpiry" SortExpression="RegistrationExpiry" />
             <asp:TemplateField>
                 <ItemTemplate>
-                    <asp:Button ID="Button1" runat="server" Text="Button" OnClick ="Button1_Click" />
+                    <asp:Button ID="Button1" runat="server" Text="Update Registration" OnClick ="UpdateRegistration_Click" />
                 </ItemTemplate>
             </asp:TemplateField>
         </Columns>

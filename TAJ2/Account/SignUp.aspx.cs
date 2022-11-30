@@ -15,7 +15,7 @@ namespace TAJ_FITNESS_AND_INSURANCE_EC1.Account
         SqlConnection con = new SqlConnection(@"Data Source=LAPTOP-U4K1BGTN;Initial Catalog=TAJ;Integrated Security=True");
         protected void CreateUser_Click(object sender, EventArgs e)
         {
-            
+            //Store the data from the text fields into variables
             string firstname = fName.Text.Trim();
             string lastName = lName.Text.Trim();
             string middleName = mName.Text.Trim();
@@ -33,7 +33,7 @@ namespace TAJ_FITNESS_AND_INSURANCE_EC1.Account
             string userName = UserName.Text.Trim();
             string password = Password.Text.Trim();
 
-            con.Open();
+            con.Open();//Open the Sql connection and run insert statments into the user and address databases
             SqlCommand cmd = new SqlCommand("INSERT INTO [dbo].[User] ([UserName],[FirstName],[LastName],[MiddleName],[Sex],[DateOfBirth],[PhoneNumber],[Email],[ID_Type],[ID_Number],[TRN],[Password]) VALUES (@UserName,@FirstName,@LastName,@MiddleName,@Sex,@DOB,@PhoneNumber,@Email,@IDType,@IDNumber,@TRN,@Password)", con);
             SqlCommand cmd2 = new SqlCommand("INSERT INTO [dbo].[Address] ([UserID],[Street],[Town],[Parish]) VALUES (@ID,@Street,@Town,@Parish)", con);
      
@@ -54,7 +54,7 @@ namespace TAJ_FITNESS_AND_INSURANCE_EC1.Account
 
             SqlCommand cmd3 = new SqlCommand("SELECT [UserID] FROM [dbo].[User] WHERE [UserName] = @UserName", con);
             cmd3.Parameters.AddWithValue("@UserName", userName);
-            int id = (int)cmd3.ExecuteScalar();
+            int id = (int)cmd3.ExecuteScalar();  //The user ID is auto generated so we must retreive it first before we can insert into the address database
 
             cmd2.Parameters.AddWithValue("@ID", id);
             cmd2.Parameters.AddWithValue("@Street", street);

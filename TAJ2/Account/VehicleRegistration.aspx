@@ -44,14 +44,7 @@
         </div>
     
     
-             <div class="form-group">
-            <asp:Label runat="server"  CssClass="col-md-2 control-label">Model</asp:Label>
-            <div class="col-md-10">
-                <asp:TextBox runat="server" ID="model" CssClass="form-control" />
-                <asp:RequiredFieldValidator runat="server" ControlToValidate="model"
-                    CssClass="text-danger" ErrorMessage="model is required." />
-            </div>
-        </div>
+           
 
     
              <div class="form-group">
@@ -64,18 +57,25 @@
         </div>
 
     
-             <div class="form-group">
-            <asp:Label runat="server" CssClass="col-md-2 control-label">Chassi Number</asp:Label>
-            <div class="col-md-10">
-                <asp:TextBox runat="server" ID="chassiNum" CssClass="form-control" />
-                <asp:RequiredFieldValidator runat="server" ControlToValidate="chassiNum"
-                    CssClass="text-danger" ErrorMessage="Chassi Number is required." />
-            </div>
+    <div class="form-group">
+        <asp:Label runat="server" CssClass="col-md-2 control-label">Chassi Number</asp:Label>
+        <div class="col-md-10">
+            <asp:TextBox runat="server" ID="chassiNum" CssClass="form-control" />
+            <asp:RequiredFieldValidator runat="server" ControlToValidate="chassiNum"
+                CssClass="text-danger" ErrorMessage="Chassi Number is required." />
         </div>
+    </div>
+    
+    <div class="form-group">
+        <asp:Label ID="Label1" runat="server" CssClass="col-md-2 control-label">License Plate#</asp:Label>
+        <asp:TextBox ID="plate" runat="server" CssClass="form-control"></asp:TextBox>
+       <asp:RequiredFieldValidator runat="server" ControlToValidate="plate"
+                CssClass="text-danger" ErrorMessage="License Plate Number is required." />
+    </div>
 
     <div class="form-group">
             <div class="col-md-offset-2 col-md-10">
-                <asp:Button runat="server" Text="Submit" CssClass="styleButtons" />
+                <asp:Button runat="server" Text="Submit" CssClass="styleButtons" OnClick="RegisterClick" />
             </div>
         </div>
 </asp:Content>

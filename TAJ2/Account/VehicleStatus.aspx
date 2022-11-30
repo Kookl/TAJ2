@@ -15,7 +15,7 @@
             </asp:DropDownList>
             <asp:TextBox runat="server" ID="insurance" CssClass="form-control" />
             <asp:Button runat="server"  Text="Submit" CssClass="styleButtons" OnClick="Insurance_Click" />
-            <asp:TextBox runat="server" ID="insuranceStatus" CccClass="form-control" />
+            <asp:TextBox runat="server" ID="insuranceStatus" CssClass="form-control" ReadOnly="True" />
         </div>
     </div>
     

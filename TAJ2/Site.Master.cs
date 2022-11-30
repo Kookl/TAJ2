@@ -12,11 +12,16 @@ namespace TAJ2
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            if(Session["Name"] != null)
+            {
+                Name.Text = "Hello " + Session["Name"].ToString();
+            }
             
             if (Session["UserID"] != null)
             {
                 signup.Visible = false;
                 login.Visible = false;
+                logout.Visible = true;
 
             }
             else
@@ -24,6 +29,8 @@ namespace TAJ2
                 yourVehicles.Visible = false;
                 vehicleStatus.Visible = false;
                 vehicleReg.Visible = false;
+                unclaimed.Visible = false;
+                logout.Visible = false;
             }
 
         }
