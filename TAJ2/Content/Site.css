@@ -1,0 +1,130 @@
+﻿/* Move down content because we have a fixed navbar that is 50px tall */
+body {
+    padding-top: 50px;
+    padding-bottom: 20px;
+    background-color: slategrey;
+    background-image: url("hero.jpg");
+}
+
+/* Wrapping element */
+/* Set some basic padding to keep content from hitting the edges */
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* Set widths on the form inputs since otherwise they're 100% wide */
+input,
+select,
+textarea {
+    max-width: 280px;
+}
+
+
+/* Responsive: Portrait tablets and up */
+@media screen and (min-width: 768px) {
+    .jumbotron {
+        margin-top: 20px;
+    }
+
+    .body-content {
+        padding: 0;
+    }
+}
+
+.navbar-inverse .navbar-toggle:hover,
+.navbar-inverse .navbar-toggle:focus {
+    background-color: teal;
+    border-color: darkslategrey;
+}
+
+
+.image {
+    width: 100%;
+    height: auto;
+}
+
+/* Container holding the image and the text */
+.container {
+    position: relative;
+    top: 61px;
+    left: 6px;
+}
+
+/* Bottom right text */
+.text-block {
+    position: absolute;
+    top: 90px;
+    left: 12px;
+    background-color: darkslategrey;
+    color: white;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.container .btn1 {
+    position: absolute;
+    bottom: 10%;
+    left: 30%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    background-color: #555;
+    color: white;
+    font-size: 16px;
+    padding: 12px 24px;
+    border: none;
+    cursor: pointer;
+    border-radius: 8px;
+}
+
+    .container .btn1:hover {
+        background-color: black;
+    }
+
+.container .btn2 {
+    position: absolute;
+    bottom: 10%;
+    left: 75%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    background-color: #555;
+    color: white;
+    font-size: 16px;
+    padding: 12px 24px;
+    border: none;
+    cursor: pointer;
+    border-radius: 8px;
+}
+
+    .container .btn2:hover {
+        background-color: black;
+    }
+
+.col-1 {
+    flex-basis: 25%;
+    padding: 20px;
+    min-width: 200px;
+    margin-bottom: 50px;
+    border-style: groove;
+    width: 800px;
+    height: 285px;
+}
+
+.small-container {
+    max-width: 720px;
+    margin: 20px;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+.col-1 img {
+    width: 82%;
+    height: 280px;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 4px;
+    background-color: dimgrey;
+}
